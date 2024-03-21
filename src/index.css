@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.todo-list-item {
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background-color:white;
+  width: 100%;
+}
+
+.todo-list-item:last-child {
+  margin-bottom: 0rem;
+}
+
+.todo-list {
+  padding: 1.3rem;
+  align-items: center;
+  justify-content: center;  
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+  border-radius: 12px;
+  background-color:#ecedf6;
+}
+
+.todo-list-item .todo-complete {
+  width: 25px;
+  height: 25px;
+  accent-color: #34495e;
+  cursor: pointer;
+}
+
+.todo-list-item .todo-text {
+  margin-left: 1rem;
+}
+
+.todo-list-item .right-buttons {
+  display: flex;
+}
+
+.todo-list-item .left-buttons {
+  display: flex;
+}
+
+.todo-list-item .delete-item-btn {
+  background-color: gainsboro;
+  border-radius:2px;
+  padding: 0.3rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.todo-list-item .edit-item-btn {
+  background-color: gainsboro;
+  border-radius:2px;
+  padding: 0.3rem;
+  display: flex;
+  cursor: pointer;
+  margin-right: 0.4rem;
+}
+
+.todo-header .todo-filter {
+  cursor: pointer;
+  border: none;
+  background-color: #cccdde;
+  width: 150px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  align-items: self-end;
+  
+}
+
+.todo-header .todo-add {
+  border: none;
+  background-color: #597087;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Todo .container {
+  max-width: 700px;
+}
+
+.todo-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 750;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal .container {
+	max-width: 500px;
+	width: 100%;
+  height: 50%;
+  background-color: white;
+  margin: 0 auto;
+  align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+}
+
+.modal .header {
+  display: flex;
+  align-self: self-start;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0rem;
+  margin-bottom: 1rem;
+}
+
+.modal .header .formTitle {
+	font-size: 1.5rem;
+	font-weight: 600;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+	text-transform: capitalize;
+}
+
+.modal .modal-form {
+  margin-left: 1rem;
+}
+
+.modal .modal-form .title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.modal .modal-form input {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.modal .modal-form input:focus {
+  border-color: #34495e;
+}
+
+.modal .modal-form select {
+  margin-top: 0.3rem;
+  width: 100%;
+  font-size: 1.1rem;
+  outline:0; 
+}
+
+.modal .modal-form select:focus {
+  border-color: #34495e;
+}
+
+.modal .modal-btn-container button {
+  padding: 0.4rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  border: none;
+}
+
+.modal .modal-btn-container .btn-add {
+  background-color: #597087;
+}
+
+.modal .modal-btn-container .btn-cancel {
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(106, 98, 98);;
+  border-width:3px;
+  color: rgb(106, 98, 98);
+}
+
+.modal .header .closeBtn {
+  background-color: gainsboro;
+  display: flex;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.modal .header .closeBtn:hover {
+  background-color: rgb(179, 137, 137);
+}
