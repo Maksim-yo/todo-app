@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import TodoListItem from './TodoListItem';
-import TodoModal from './TodoModal';
 
 const TodoList = () => {
   const todos = useSelector((state) =>

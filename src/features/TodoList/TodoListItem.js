@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { todoToggled } from '../todos/todosSlice';
+import { useDispatch } from 'react-redux';
 import TodoModal from './TodoModal';
 
 export const selectTodos = (state) => state.todos.entities;
@@ -8,7 +7,7 @@ export const selectTodos = (state) => state.todos.entities;
 const TodoListItem = ({ todo }) => {
   const [checked, setChecked] = useState(false);
   const [updateModalOpen, setUpdateModalOpen] = useState(false);
-  const { id, text, completed, color } = todo;
+  const { id, text, status } = todo;
 
   const dispatch = useDispatch();
 
